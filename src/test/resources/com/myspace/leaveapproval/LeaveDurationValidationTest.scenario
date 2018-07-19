@@ -32,6 +32,9 @@
         <expect-field>
           <fieldName>valid</fieldName>
           <expected>false</expected>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[f1] field [valid] was [] expected [false].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -39,8 +42,20 @@
       <name>f1</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>Row 1 LeaveRequestRUle</ruleName>
+      <expectedFire>true</expectedFire>
+    </expect-rule>
+    <expect-rule>
+      <ruleName>Row 2 LeaveRequestRUle</ruleName>
+      <expectedFire>true</expectedFire>
+    </expect-rule>
+    <expect-rule>
+      <ruleName>Row 3 LeaveRequestRUle</ruleName>
+      <expectedFire>true</expectedFire>
+    </expect-rule>
   </fixtures>
-  <lastRunResult>2018-07-19 05:21:41.65 UTC</lastRunResult>
+  <lastRunResult>2018-07-19 05:22:08.311 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.leaveapproval</packageName>
