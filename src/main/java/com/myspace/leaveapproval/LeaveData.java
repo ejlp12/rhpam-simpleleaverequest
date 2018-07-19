@@ -24,7 +24,7 @@ public class LeaveData implements java.io.Serializable {
 	private java.lang.String startDate;
 
 	@org.kie.api.definition.type.Label(value = "Valid")
-	private java.lang.Boolean isValid;
+	private java.lang.Boolean valid;
 
 	public LeaveData() {
 	}
@@ -61,22 +61,22 @@ public class LeaveData implements java.io.Serializable {
 		this.startDate = startDate;
 	}
 
-	public java.lang.Boolean getIsValid() {
-		return this.isValid;
+	public java.lang.Boolean getValid() {
+		return this.valid;
 	}
 
-	public void setIsValid(java.lang.Boolean isValid) {
-		this.isValid = isValid;
+	public void setValid(java.lang.Boolean valid) {
+		this.valid = valid;
 	}
 
 	public LeaveData(java.lang.Long id, java.lang.Double duration,
 			java.lang.String employeName, java.lang.String startDate,
-			java.lang.Boolean isValid) {
+			java.lang.Boolean valid) {
 		this.id = id;
 		this.duration = duration;
 		this.employeName = employeName;
 		this.startDate = startDate;
-		this.isValid = isValid;
+		this.valid = valid;
 	}
 
 }
