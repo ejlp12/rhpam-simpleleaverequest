@@ -14,14 +14,17 @@ public class LeaveData implements java.io.Serializable {
 	@javax.persistence.SequenceGenerator(name = "LEAVEDATA_ID_GENERATOR", sequenceName = "LEAVEDATA_ID_SEQ")
 	private java.lang.Long id;
 
-	@org.kie.api.definition.type.Label(value = "Duration")
+	@org.kie.api.definition.type.Label("Duration")
 	private java.lang.Double duration;
 
-	@org.kie.api.definition.type.Label(value = "Nama Pegawai")
+	@org.kie.api.definition.type.Label("Nama Pegawai")
 	private java.lang.String employeName;
 
-	@org.kie.api.definition.type.Label(value = "Tanggal start cuti")
+	@org.kie.api.definition.type.Label("Tanggal start cuti")
 	private java.lang.String startDate;
+
+	@org.kie.api.definition.type.Label(value = "Valid")
+	private java.lang.Boolean isValid;
 
 	public LeaveData() {
 	}
@@ -58,12 +61,22 @@ public class LeaveData implements java.io.Serializable {
 		this.startDate = startDate;
 	}
 
+	public java.lang.Boolean getIsValid() {
+		return this.isValid;
+	}
+
+	public void setIsValid(java.lang.Boolean isValid) {
+		this.isValid = isValid;
+	}
+
 	public LeaveData(java.lang.Long id, java.lang.Double duration,
-			java.lang.String employeName, java.lang.String startDate) {
+			java.lang.String employeName, java.lang.String startDate,
+			java.lang.Boolean isValid) {
 		this.id = id;
 		this.duration = duration;
 		this.employeName = employeName;
 		this.startDate = startDate;
+		this.isValid = isValid;
 	}
 
 }
