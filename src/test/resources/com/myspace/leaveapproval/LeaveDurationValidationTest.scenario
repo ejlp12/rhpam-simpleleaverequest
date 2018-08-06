@@ -23,9 +23,26 @@
       <name>f1</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>LeaveData</type>
+      <fieldData>
+        <field-data>
+          <name>duration</name>
+          <value>4</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>employeName</name>
+          <value>test2</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>f2</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>0</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>3</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -33,8 +50,8 @@
           <fieldName>valid</fieldName>
           <expected>false</expected>
           <actualResult></actualResult>
-          <successResult>false</successResult>
-          <explanation>[f1] field [valid] was [] expected [false].</explanation>
+          <successResult>true</successResult>
+          <explanation>[f1] field [valid] was [false].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -42,20 +59,20 @@
       <name>f1</name>
       <anonymous>false</anonymous>
     </expect-fact>
-    <expect-rule>
-      <ruleName>Row 1 LeaveRequestRUle</ruleName>
-      <expectedFire>true</expectedFire>
-    </expect-rule>
-    <expect-rule>
-      <ruleName>Row 2 LeaveRequestRUle</ruleName>
-      <expectedFire>true</expectedFire>
-    </expect-rule>
-    <expect-rule>
-      <ruleName>Row 3 LeaveRequestRUle</ruleName>
-      <expectedFire>true</expectedFire>
-    </expect-rule>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>valid</fieldName>
+          <expected>true</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>f2</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2018-07-19 05:22:08.311 UTC</lastRunResult>
+  <lastRunResult>2018-08-06 11:06:40.786 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.leaveapproval</packageName>
