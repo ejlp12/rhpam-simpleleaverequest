@@ -40,9 +40,26 @@
       <name>f2</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>LeaveData</type>
+      <fieldData>
+        <field-data>
+          <name>duration</name>
+          <value>11</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>employeName</name>
+          <value>test3</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>f3</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>3</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>5</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -64,6 +81,8 @@
         <expect-field>
           <fieldName>valid</fieldName>
           <expected>true</expected>
+          <successResult>true</successResult>
+          <explanation>[f2] field [valid] was [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -71,8 +90,20 @@
       <name>f2</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>valid</fieldName>
+          <expected>false</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>f3</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2018-08-06 11:06:40.786 UTC</lastRunResult>
+  <lastRunResult>2018-08-06 11:12:29.557 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.leaveapproval</packageName>
