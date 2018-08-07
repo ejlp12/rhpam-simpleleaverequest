@@ -57,9 +57,43 @@
       <name>f3</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>LeaveData</type>
+      <fieldData>
+        <field-data>
+          <name>duration</name>
+          <value>50</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>employeName</name>
+          <value>test4</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>f4</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>LeaveData</type>
+      <fieldData>
+        <field-data>
+          <name>duration</name>
+          <value>0.5</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>employeName</name>
+          <value>test5</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>f5</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>5</executionTimeResult>
-      <numberOfRulesFired>2</numberOfRulesFired>
+      <executionTimeResult>4</executionTimeResult>
+      <numberOfRulesFired>3</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -81,6 +115,7 @@
         <expect-field>
           <fieldName>valid</fieldName>
           <expected>true</expected>
+          <actualResult></actualResult>
           <successResult>true</successResult>
           <explanation>[f2] field [valid] was [true].</explanation>
           <operator>==</operator>
@@ -95,6 +130,9 @@
         <expect-field>
           <fieldName>valid</fieldName>
           <expected>false</expected>
+          <actualResult></actualResult>
+          <successResult>true</successResult>
+          <explanation>[f3] field [valid] was [false].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -102,8 +140,32 @@
       <name>f3</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>valid</fieldName>
+          <expected>false</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>f4</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>valid</fieldName>
+          <expected>true</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>f5</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2018-08-06 11:12:29.557 UTC</lastRunResult>
+  <lastRunResult>2018-08-07 03:22:03.403 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.leaveapproval</packageName>
