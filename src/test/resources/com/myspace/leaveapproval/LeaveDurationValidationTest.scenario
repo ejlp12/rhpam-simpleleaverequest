@@ -16,7 +16,7 @@
         </field-data>
         <field-data>
           <name>employeName</name>
-          <value>eryan</value>
+          <value>test1</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -92,8 +92,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>4</executionTimeResult>
-      <numberOfRulesFired>3</numberOfRulesFired>
+      <executionTimeResult>6</executionTimeResult>
+      <numberOfRulesFired>5</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -145,6 +145,8 @@
         <expect-field>
           <fieldName>valid</fieldName>
           <expected>false</expected>
+          <successResult>true</successResult>
+          <explanation>[f4] field [valid] was [false].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -157,6 +159,8 @@
         <expect-field>
           <fieldName>valid</fieldName>
           <expected>true</expected>
+          <successResult>true</successResult>
+          <explanation>[f5] field [valid] was [true].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -165,7 +169,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2018-08-07 03:22:03.403 UTC</lastRunResult>
+  <lastRunResult>2018-08-07 03:24:20.372 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.leaveapproval</packageName>
